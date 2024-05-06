@@ -1,0 +1,51 @@
+{
+  "id": "additional-icon-fonts",
+  "title": "Additional Icon Fonts",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11"
+  },
+  "authors": [
+    {
+      "name": "Emmanuel Wineberg",
+      "email": "esheyw@gmail.com",
+      "url": "https://github.com/esheyw",
+      "discord": "esheyw"
+    }
+  ],
+  "license": "LICENSE",
+  "flags": {
+    "hotReload": {
+      "extensions": [
+        "css",
+        "hbs",
+        "json"
+      ]
+    }
+  },
+  "esmodules": [
+    "scripts/init.mjs"
+  ],
+  "styles": [
+    "game-icons.net.css",
+    "jamicons.css",
+    "styles/boxicons.min.css",
+    "styles/materialdesignicons.min.css"
+  ],
+  "relationships": {
+    "recommended": [
+      {
+        "id": "macro-helper-library",
+        "type": "module",
+        "manifest": "https://github.com/esheyw/pf2e-macro-helper-library/releases/latest/download/module.json"
+      }
+    ]
+  },
+  "version": "1.0",
+  "manifest": "updatedByRelease",
+  "url": "updatedByRelease",
+  "download": "updatedByRelease",
+  "readme": "https://github.com/esheyw/additional-icon-fonts/blob/main/README.md",
+  "bugs": "https://github.com/esheyw/additional-icon-fonts/issues",
+  "changelog": "https://github.com/esheyw/additional-icon-fonts/blob/main/CHANGELOG.md"
+}

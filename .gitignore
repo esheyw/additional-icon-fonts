@@ -1,0 +1,8 @@
+jsconfig.json
+.vscode/
+packs/**
+node_modules
+app/**
+fonts/**
+styles/**
+game-icons.net/

@@ -1,0 +1,22 @@
+{
+  "name": "additional-icon-fonts",
+  "version": "1.0.0",
+  "description": "Additional FontAwesome-like icon fonts for FoundryVTT",
+  "main": "scripts/init.mjs",
+  "scripts": {
+    "build:fonts": "node build/buildfonts.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Emmanuel Wineberg",
+  "license": "MIT",
+  "devDependencies": {
+    "@mdi/font": "^7.4.47",
+    "@mdi/svg": "^7.4.47",
+    "@types/adm-zip": "^0.5.5",
+    "adm-zip": "^0.5.12",
+    "boxicons": "^2.1.4",
+    "svgson": "^5.3.1",
+    "svgtofont": "^4.2.0"
+  },
+  "type": "module"
+}
