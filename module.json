@@ -23,24 +23,12 @@
       ]
     }
   },
-  "esmodules": [
-    "scripts/init.mjs"
-  ],
   "styles": [
     "game-icons.net.css",
     "jamicons.css",
     "styles/boxicons.min.css",
     "styles/materialdesignicons.min.css"
   ],
-  "relationships": {
-    "recommended": [
-      {
-        "id": "macro-helper-library",
-        "type": "module",
-        "manifest": "https://github.com/esheyw/pf2e-macro-helper-library/releases/latest/download/module.json"
-      }
-    ]
-  },
   "version": "1.0",
   "manifest": "updatedByRelease",
   "url": "updatedByRelease",
