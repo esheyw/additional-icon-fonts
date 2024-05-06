@@ -64,6 +64,10 @@ Useage: domain class + icon class + optional modifiers:
 
 I have chosen *not* to ship with the raw SVG files for any of these icon sets, they are all freely available for download from links found in this readme if you need them.
 
+## Known Issues
+
+Right now the module is an almost 30mb download, and a large part of that is potentially redundant font files. Unfortunately I'm relying on the output of the `svgtofont` NPM package, and don't have enough real-world CSS knowledge to know what I can safely remove. If anyone would like to educate me on the subject, I would welcome that, else it'll be a research topic for when I have some free time eventually.
+
 ## Licences
 
 The module code that generates the fonts for game-icons and jam and organizes things is by me, released under the [MIT License](https://opensource.org/licenses/MIT), found in the code as `LICENSE`  
