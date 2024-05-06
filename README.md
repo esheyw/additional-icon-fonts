@@ -60,6 +60,10 @@ Useage: domain class + icon class + optional modifiers:
 
 [Further Documentation](https://boxicons.com/usage#styling) including flip, rotate, fixed-with, size, and animation options.
 
+## SVGs
+
+I have chosen *not* to ship with the raw SVG files for any of these icon sets, they are all freely available for download from links found in this readme if you need them.
+
 ## Licences
 
 The module code that generates the fonts for game-icons and jam and organizes things is by me, released under the [MIT License](https://opensource.org/licenses/MIT), found in the code as `LICENSE`  
