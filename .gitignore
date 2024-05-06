@@ -2,7 +2,6 @@ jsconfig.json
 .vscode/
 packs/**
 node_modules
-app/**
+app
 fonts/**
 styles/**
-game-icons.net/
