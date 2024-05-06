@@ -59,5 +59,5 @@ export async function gameiconsHandler(fontDir) {
   fs.rmSync(fontsCSSPath);
   fs.cpSync(path.resolve(fontDir, 'icons/license.txt'), path.resolve('licenses', 'LICENSE.game-icons.net.txt'));
   fs.rmSync(fontDir, { recursive: true });
-  return `${fontName}.css`;
+  return `styles/${fontName}.css`;
 }

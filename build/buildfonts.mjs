@@ -23,7 +23,7 @@ const fonts = [
     handler: mdiHandler
   }
 ];
-cleanDirectory('styles');
+cleanDirectory(['styles','fonts']);
 const styles = [];
 for (const font of fonts) {
   const fontDir = path.resolve('.', font.id);  

@@ -7,13 +7,13 @@ export function unzipDirectory(inputFilePath, outputDirectory = null) {
   const zip = new AdmZip(inputFilePath);
   outputDirectory ??= path.dirname(inputFilePath);
   try {
-    zip.extractAllTo(outputDirectory, true)
-  } catch(error) {
+    zip.extractAllTo(outputDirectory, true);
+  } catch (error) {
     console.log(error);
     return null;
   }
   console.log(`Extracted to "${outputDirectory}" successfully`);
-  return outputDirectory;  
+  return outputDirectory;
 }
 export function validateURL(url) {
   let validURL;
@@ -49,13 +49,17 @@ export async function download(url, targetPrefix = '.', { includePath = false } 
   return targetPath;
 }
 
-export function cleanDirectory(baseDir) {
-  if (fs.existsSync(baseDir)) {
-    const filesToClean = fs.readdirSync(baseDir).map(dirName => path.resolve(baseDir, dirName));
-    for (const file of filesToClean) {
-      fs.rmSync(file, { recursive: true });
+export function cleanDirectory(dirs) {
+  if (!Array.isArray(dirs)) dirs = [dirs];
+  dirs = dirs.filter(e => !!e).map(e => String(e));
+  for (const dir of dirs) {
+    if (fs.existsSync(dir)) {
+      const filesToClean = fs.readdirSync(dir).map(f => path.resolve(dir, f));
+      for (const file of filesToClean) {
+        fs.rmSync(file, { recursive: true });
+      }
+    } else {
+      fs.mkdirSync(dir);
     }
-  } else {
-    fs.mkdirSync(baseDir);
   }
 }

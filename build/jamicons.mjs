@@ -29,5 +29,5 @@ export async function jamIconsHandler(fontDir) {
   fs.rmSync(fontsCSSPath);
   fs.cpSync(path.resolve(fontDir, `jam-${lastVersion}`, 'LICENSE'), path.resolve('licenses', 'LICENSE.jamicons.txt'))
   fs.rmSync(fontDir, { recursive: true });
-  return `${fontName}.css`;
+  return `styles/${fontName}.css`;
 }
