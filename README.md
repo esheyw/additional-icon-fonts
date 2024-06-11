@@ -1,22 +1,12 @@
 # Additional Icon Fonts
 
-The successor module to [game-icons.net font](https://github.com/esheyw/game-icons-net-font). Now with 400% more fonts!
+The successor module to [game-icons.net font](https://github.com/esheyw/game-icons-net-font). Now with 300% more fonts!
 
 ## Fonts
 
-This module provides several FontAwesome-like icon fonts for use with FoundryVTT.
+This module provides several FontAwesome-like icon fonts for use with FoundryVTT. Each are individually enableable from settings.
 
-### game-icons.net
-
-[Homepage/list of icons](https://game-icons.net/)  
-Prefix: `ginf-`  
-Usage: icon class only:
-
-```html
-<i class="ginf-abstract-001"></i>
-```
-
-No extra classes required or provided.
+**_Only Material Design is enabled by default_** (It's the broadest and best IMO).
 
 ### Material Design icons by Pictogrammers
 
@@ -34,6 +24,18 @@ Usage: domain class + icon class + optional modifiers:
 
 [Further Documentation](https://pictogrammers.com/docs/library/mdi/getting-started/webfont/#basic-example), including flip, rotate, and spin options.
 
+### game-icons.net
+
+[Homepage/list of icons](https://game-icons.net/)  
+Prefix: `ginf-`  
+Usage: icon class only:
+
+```html
+<i class="ginf-abstract-001"></i>
+```
+
+No extra classes required or provided.
+
 ### Jam Icons
 
 [Homepage/list of icons](https://jam-icons.com/)  
@@ -41,8 +43,7 @@ Prefix: `jam-`
 Usage: icon class only
 
 ```html
-// basic
-<i class="jam-"></i>
+// basic <i class="jam-"></i>
 ```
 
 ### boxicons
@@ -62,7 +63,7 @@ Useage: domain class + icon class + optional modifiers:
 
 ## SVGs
 
-I have chosen *not* to ship with the raw SVG files for any of these icon sets, they are all freely available for download from links found in this readme if you need them.
+I have chosen _not_ to ship with the raw SVG files for any of these icon sets, they are all freely available for download from links found in this readme if you need them.
 
 ## Known Issues
 
@@ -70,11 +71,11 @@ Right now the module is an almost 30mb download, and a large part of that is pot
 
 ## Licences
 
-The module code that generates the fonts for game-icons and jam and organizes things is by me, released under the [MIT License](https://opensource.org/licenses/MIT), found in the code as `LICENSE`  
+The module code that generates the fonts for game-icons and jam and organizes things is by me, released under the [MIT License](https://opensource.org/licenses/MIT), found in the code as `LICENSE`
 
 The licenses provided with each icon set can be found in the `licences/` folder with only the file names altered.
 
 - game-icons.net icons are released under the [CC-BY-3.0 License](http://creativecommons.org/licenses/by/3.0/) as noted on their [homepage](https://game-icons.net/)
 - Jam Icons are released under the [MIT License](https://opensource.org/licenses/MIT) as found [here](https://github.com/michaelampr/jam/blob/master/LICENSE)
-- Material Design icons are covered by the [Pictogrammers Free License](https://pictogrammers.com/docs/general/license/), which boils down to [Apache 2.0]((https://www.apache.org/licenses/LICENSE-2.0)) for the font files and the [MIT License](https://opensource.org/licenses/MIT) for the css file.
+- Material Design icons are covered by the [Pictogrammers Free License](https://pictogrammers.com/docs/general/license/), which boils down to [Apache 2.0](<(https://www.apache.org/licenses/LICENSE-2.0)>) for the font files and the [MIT License](https://opensource.org/licenses/MIT) for the css file.
 - boxicons are released under the [MIT License](https://opensource.org/licenses/MIT) as found [https://boxicons.com/usage#license](https://boxicons.com/usage#license)

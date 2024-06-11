@@ -8,8 +8,6 @@ export function boxiconsHandler(fontDir) {
   const existingCSSPath = path.resolve(nodeRoot, 'css/', cssFileName);
   const targetCSSPath = path.resolve('styles', cssFileName);
   fs.cpSync(existingCSSPath, targetCSSPath)
-  // const cssContents = fs.readFileSync(existingCSSPath, { encoding: 'utf-8' }).replaceAll(`../fonts`, `styles`);
-  // fs.writeFileSync(targetCSSPath, cssContents);
   const fontFiles = fs.readdirSync(path.resolve(nodeRoot, 'fonts'));
   for (const fontFile of fontFiles) {
     fs.cpSync(path.resolve(nodeRoot, 'fonts', fontFile), path.resolve('fonts', fontFile));

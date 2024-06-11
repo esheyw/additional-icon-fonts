@@ -1,0 +1,26 @@
+{
+  "AdditionalIconFonts": {
+    "Setting": {
+      "Materialdesign": {
+        "Name": "Material Design Icons",
+        "Hint": "Enables the Material Design Icons font. [List of icons](https://pictogrammers.com/library/mdi/)",
+        "HintBasic": "Enables the Material Design Icons font. See the module readme for a link to the icon list."
+      },
+      "Boxicons": {
+        "Name": "Box Icons",
+        "Hint": "Enables the Box Icons font. [Homepage/list of icons](https://boxicons.com/)",
+        "HintBasic": "Enables the Box Icons font. See the module readme for a link to the icon list."
+      },
+      "Jamicons": {
+        "Name": "Jam Icons",
+        "Hint": "Enables the Jam Icons font. [Homepage/list of icons](https://jam-icons.com/)",
+        "HintBasic": "Enables the Jam Icons font. See the module readme for a link to the icon list."
+      },
+      "GameIconsnet": {
+        "Name": "game-icons.net",
+        "Hint": "Enables the game-icons.net font. [Homepage/list of icons](https://game-icons.net/)",
+        "HintBasic": "Enables the game-icons.net font. See the module readme for a link to the icon list."
+      }
+    }
+  }
+}

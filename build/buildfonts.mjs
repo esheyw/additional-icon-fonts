@@ -36,8 +36,8 @@ for (const file of toDelete) {
   fs.rmSync(file);
 }
 if (process.stdout?.cursorTo) process.stdout.write(' Done!\n');
-console.log('Updating manifest...');
-const manifest = JSON.parse(fs.readFileSync('module.json', 'utf-8'));
-manifest.styles = styles;
-fs.writeFileSync('module.json', JSON.stringify(manifest, null, 2));
-console.log('Updated.');
+// console.log('Updating manifest...');
+// const manifest = JSON.parse(fs.readFileSync('module.json', 'utf-8'));
+// manifest.styles = styles;
+// fs.writeFileSync('module.json', JSON.stringify(manifest, null, 2));
+// console.log('Updated.');

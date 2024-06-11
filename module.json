@@ -23,12 +23,15 @@
       ]
     }
   },
-  "styles": [
-    "game-icons.net.css",
-    "jamicons.css",
-    "styles/boxicons.min.css",
-    "styles/materialdesignicons.min.css"
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
+    }
   ],
+  "esmodules": ["scripts/init.mjs"],
   "version": "1.0",
   "manifest": "updatedByRelease",
   "url": "updatedByRelease",
