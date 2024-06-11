@@ -1,5 +1,9 @@
 # Additional Icon Fonts
 
+## Version 1.1.1
+
+- Actually ship all the files of the module
+
 ## Version 1.1.0
 
 - Fonts are now enabled individually in settings, and the module will only load enabled fonts, reducing world-load bandwidth required.

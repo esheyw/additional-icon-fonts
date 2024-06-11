@@ -33,7 +33,7 @@ jobs:
           flags.hotReload: null
 
       # Create a zip file with all files required by the module to add to the release
-      - run: zip -r ./module.zip module.json LICENSE README.md CHANGELOG.md styles/ licenses/ fonts/
+      - run: zip -r ./module.zip module.json LICENSE README.md CHANGELOG.md styles/ licenses/ fonts/ scripts/ lang/
 
       # Create a release for this specific version
       - name: Update Release with Files
