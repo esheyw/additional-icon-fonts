@@ -1,4 +1,5 @@
 import { MODULE_ID } from "./config.mjs";
+import { processFont } from "./init.mjs";
 export const SETTINGS = {
   materialdesign: {
     type: Boolean,
@@ -7,7 +8,7 @@ export const SETTINGS = {
     name: "AdditionalIconFonts.Setting.Materialdesign.Name",
     hint: "AdditionalIconFonts.Setting.Materialdesign.HintBasic",
     scope: "world",
-    requiresReload: true,
+    onChange: () => processFont("materialdesign")
   },
   boxicons: {
     type: Boolean,
@@ -16,7 +17,7 @@ export const SETTINGS = {
     name: "AdditionalIconFonts.Setting.Boxicons.Name",
     hint: "AdditionalIconFonts.Setting.Boxicons.HintBasic",
     scope: "world",
-    requiresReload: true,
+    onChange: () => processFont("boxicons")
   },
   jamicons: {
     type: Boolean,
@@ -25,7 +26,7 @@ export const SETTINGS = {
     name: "AdditionalIconFonts.Setting.Jamicons.Name",
     hint: "AdditionalIconFonts.Setting.Jamicons.HintBasic",
     scope: "world",
-    requiresReload: true,
+    onChange: () => processFont("jamicons")
   },
   "game-icons.net": {
     type: Boolean,
@@ -34,7 +35,7 @@ export const SETTINGS = {
     name: "AdditionalIconFonts.Setting.GameIconsnet.Name",
     hint: "AdditionalIconFonts.Setting.GameIconsnet.HintBasic",
     scope: "world",
-    requiresReload: true,
+    onChange: () => processFont("game-icons.net")
   },
 };
 export function registerSettings() {

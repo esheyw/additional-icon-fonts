@@ -22,10 +22,12 @@ export const FONTS = [
         value: "spin",
       },
     },
+    sort: 1,
   },
   {
     name: "boxicons",
     file: `modules/${MODULE_ID}/styles/boxicons.min.css`,
+    //todo: not all icons are valid with either prefix, either drop entirely or improve handling
     prefixes: ["bx-", "bxs-", "bxl-"],
     schema: {
       domain: {
@@ -65,15 +67,18 @@ export const FONTS = [
         choices: ["spin", "tada", "flashing", "burst", "fade-left", "fade-right", "fade-up", "fade-down"],
       },
     },
+    sort: 2,
   },
   {
     name: "jamicons",
     file: `modules/${MODULE_ID}/styles/jamicons.css`,
     prefixes: ["jam-"],
+    sort: 3,
   },
   {
     name: "game-icons.net",
     file: `modules/${MODULE_ID}/styles/game-icons.net.css`,
     prefixes: ["ginf-"],
+    sort: 4,
   },
 ];

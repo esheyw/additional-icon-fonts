@@ -1,11 +1,12 @@
 import { FONTS, MODULE_ID } from "./config.mjs";
 import { SETTINGS, registerSettings } from "./settings.mjs";
+export const MHL = () => game.modules.get("macro-helper-library")?.api;
 
 Hooks.once("i18nInit", () => {
-  const mhl = game.modules.get("macro-helper-library")?.api;
+  const mhl = MHL();
   if (mhl) {
     for (const setting in SETTINGS) {
-      SETTINGS[setting].hint = null; // use the enrichable hint
+      SETTINGS[setting].hint = true; // use the enrichable hint
     }
     new mhl.util.MHLSettingsManager(MODULE_ID, { settings: SETTINGS });
   } else {
@@ -14,11 +15,27 @@ Hooks.once("i18nInit", () => {
 });
 
 Hooks.once("setup", () => {
-  const mhl = game.modules.get("macro-helper-library")?.api;
   for (const font of FONTS) {
-    const enabled = setting(font.name);
-    if (!enabled) continue;
+    processFont(font.name);
+  }
+});
+
+function setting(key) {
+  const mhl = MHL();
+  if (mhl) {
+    return mhl.util.MHLSettingsManager.managers.get(MODULE_ID).get(key);
+  } else {
+    return game.settings.get(MODULE_ID, key);
+  }
+}
+
+export function processFont(fontName) {
+  const enabled = setting(fontName);
+  const mhl = MHL();
+  if (enabled) {
+    const font = FONTS.find((f) => f.name === fontName);
     const link = document.createElement("link");
+    link.dataset.fontName = fontName;
     link.rel = "stylesheet";
     link.type = "text/css";
     if (mhl) {
@@ -28,14 +45,12 @@ Hooks.once("setup", () => {
     }
     link.href = font.file;
     document.head.appendChild(link);
-  }
-});
-
-function setting(key) {
-  const mhl = game.modules.get("macro-helper-library")?.api;
-  if (mhl) {
-    return mhl.util.MHLSettingsManager.managers.get(MODULE_ID).get(key);
   } else {
-    return game.settings.get(MODULE_ID, key);
+    const link = document.head.querySelector(`[data-font-name="${fontName}"]`);
+    if (link) link.remove();
+    if (mhl) {
+      const iconFontEntry = CONFIG.MHL.iconFonts.find((f) => f.name === fontName);
+      if (iconFontEntry) CONFIG.MHL.iconFonts.findSplice((e) => e === iconFontEntry);
+    }
   }
 }

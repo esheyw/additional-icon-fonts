@@ -3,7 +3,7 @@
   "title": "Additional Icon Fonts",
   "compatibility": {
     "minimum": "11",
-    "verified": "11"
+    "verified": "12.328"
   },
   "authors": [
     {
@@ -16,11 +16,7 @@
   "license": "LICENSE",
   "flags": {
     "hotReload": {
-      "extensions": [
-        "css",
-        "hbs",
-        "json"
-      ]
+      "extensions": ["css", "hbs", "json"]
     }
   },
   "languages": [
@@ -31,6 +27,7 @@
       "flags": {}
     }
   ],
+  "library": true,
   "esmodules": ["scripts/init.mjs"],
   "version": "1.0",
   "manifest": "updatedByRelease",

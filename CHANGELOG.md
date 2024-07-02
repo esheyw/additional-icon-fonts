@@ -1,5 +1,9 @@
 # Additional Icon Fonts
 
+## Version 1.2.0
+
+- Refactored font enabling to no longer require page reload
+
 ## Version 1.1.1
 
 - Actually ship all the files of the module
